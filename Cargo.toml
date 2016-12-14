@@ -1,0 +1,6 @@
+[package]
+name = "helium"
+version = "0.1.0"
+authors = ["Martin Hanzík <martin@hanzik.com>", "Kuba Marek <bluecube@seznam.cz>"]
+
+[dependencies]
