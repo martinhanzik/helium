@@ -5,7 +5,7 @@ extern crate clap;
 use clap::{Arg, App};
 
 fn main() {
-    let matches = App::new("Helium")
+    App::new("Helium")
         .version(crate_version!())
         .author(crate_authors!())
         .about("The awesomest of editors.")
