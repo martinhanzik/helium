@@ -20,6 +20,6 @@ install:
  - tar xzf SDL2_ttf-*.tar.gz
  - pushd SDL2_ttf-* && ./configure && make && sudo make install && popd
 
- env:
+env:
   global:
   - LD_LIBRARY_PATH: "/usr/local/lib"
