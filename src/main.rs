@@ -21,6 +21,7 @@ fn main() {
         .unwrap()
         .window("Helium", 800, 600)
         .resizable()
+        .allow_highdpi()
         .build()
         .unwrap();
     let mut renderer = window.renderer()
