@@ -1,6 +1,20 @@
 extern crate sdl2;
+#[macro_use]
+extern crate clap;
+
+use clap::{Arg, App};
 
 fn main() {
+    let matches = App::new("Helium")
+        .version(crate_version!())
+        .author(crate_authors!())
+        .about("The awesomest of editors.")
+        .arg(Arg::with_name("file")
+            .help("Input file")
+            .index(1))
+        .get_matches();
+
+
     let sdl_context = sdl2::init().unwrap();
     let ttf_context = sdl2::ttf::init().unwrap();
     let window = sdl_context.video()
