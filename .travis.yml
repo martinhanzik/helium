@@ -19,3 +19,7 @@ install:
  - wget -q http://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-2.0.12.tar.gz
  - tar xzf SDL2_ttf-*.tar.gz
  - pushd SDL2_ttf-* && ./configure && make && sudo make install && popd
+
+ env:
+  global:
+   - LD_LIBRARY_PATH: "/usr/local/lib"
