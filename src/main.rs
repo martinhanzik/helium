@@ -31,7 +31,7 @@ fn main() {
         .unwrap();
     let font = ttf_context.load_font(std::path::Path::new("DejaVuSansMono.ttf"), 24).unwrap();
     let hello =
-        font.render("Hello world!").blended(sdl2::pixels::Color::RGB(150, 150, 150)).unwrap();
+        font.render("Hello world!☺").blended(sdl2::pixels::Color::RGB(150, 150, 150)).unwrap();
     let rect = sdl2::rect::Rect::new(0, 0, hello.width(), hello.height());
     let mut hello_texture = renderer.create_texture_from_surface(&hello).unwrap();
     renderer.set_draw_color(sdl2::pixels::Color::RGB(30, 35, 40));
