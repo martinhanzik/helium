@@ -29,7 +29,7 @@ fn main() {
         .present_vsync()
         .build()
         .unwrap();
-    let font = ttf_context.load_font(std::path::Path::new("DejaVuSansMono.ttf"), 16).unwrap();
+    let font = ttf_context.load_font(std::path::Path::new("DejaVuSansMono.ttf"), 24).unwrap();
     let hello =
         font.render("Hello world!").blended(sdl2::pixels::Color::RGB(150, 150, 150)).unwrap();
     let rect = sdl2::rect::Rect::new(0, 0, hello.width(), hello.height());
