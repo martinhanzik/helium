@@ -1,7 +1,8 @@
 set -ex
 
 main() {
-  pwd
+  mkdir -p deps
+  cd deps
   wget https://www.libsdl.org/release/SDL2-2.0.4.tar.gz -O sdl2.tar.gz
   tar xzf sdl2.tar.gz
 
