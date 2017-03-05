@@ -92,6 +92,7 @@ deploy:
     tags: true
   provider: releases
   skip_cleanup: true
+  all_branches: true
 
 cache:
   cargo: true
